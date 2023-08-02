@@ -1,0 +1,244 @@
+:root {
+    --color-black-padrao: #000;
+
+    --color-cinza-light: #808080;
+    --color-cinza-dark: #404040;
+    --color-cinza--claro:#a7a7a7b2;
+
+    --color-red: #ff0301;
+    --color-red-light: #ff000080;
+    
+    --color-white: #fff;
+
+
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: var(--color-cinza-dark);
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+.header {
+    background-color: var(--color-cinza-light);
+    max-width: 80vw;
+    height: 100px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border-top: 3px solid var(--color-red);
+    border-bottom: 3px solid var(--color-red);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    
+}
+.logo {
+    width: 80px;
+    margin-left: 50px;
+}
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+.menu ul li a{
+    margin-right: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-black-padrao);
+    transition: 0.3s all ease-in-out;
+}
+.menu ul li a:hover {
+    color: var(--color-red-light);
+    
+}
+.section-tribute {
+    background-color: var(--color-cinza-light);
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    border-top: 3px solid var(--color-red);
+    border-bottom: 3px solid var(--color-red);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.section-tribute div {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+}
+.section-tribute div h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-tribute div p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+.section-tribute .img-chester {
+    width: 300px;
+}
+.section-tribute legend {
+    font-size: 13px;
+    font-size: 400;
+    text-align: center;
+    width: 300px;
+    color: var(--color-white);
+}
+.section-bio {
+    background-color: var(--color-cinza-light);
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    border-top: 3px solid var(--color-red);
+    border-bottom: 3px solid var(--color-red);
+}
+.biografia h2,
+.section-timeline h2 {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+.biografia p {
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    border: 1px solid var(--color-red-light);
+    border-radius: 20px;
+    background-color: var(--color-cinza--claro);
+}
+.biografia i,
+.party-timeline .link i {
+    padding: 2px;
+    border-radius: 50%;
+    color: var(--color-red);
+    transition: all ease-in-out 0.3s;
+}
+.biografia i:hover,
+.party-timeline .link i:hover {
+    background-color: var(--color-black-padrao);
+}
+.section-timeline {
+    background-color: var(--color-cinza-light);
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    border-top: 3px solid var(--color-red);
+    border-bottom: 3px solid var(--color-red);
+}
+.section-timeline .party-timeline div{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-red-light);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--color-cinza--claro);
+}
+.section-timeline .party-timeline div h3 {
+    font-size:16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.party-timeline .link {
+    text-align: center;
+}
+footer {
+    width: 100%;
+    /* height: 20px; */
+    background-color: var(--color-black-padrao);
+    color: var(--color-white);
+    margin: auto;
+    padding: 5px;
+}
+footer address{
+    color: var(--color-white);
+    text-align: center;
+    font-size: 14px;
+}
+footer address span, i{
+    color: var(--color-cinza-light);
+}
+footer address i:hover {
+    color: var(--color-red);
+}
+footer address a {
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 800px){
+    .header {
+        flex-direction: column;
+    }
+    .logo {
+        width: 50px;
+        margin-left: 0;
+        margin: 7px 0;
+    }
+    .menu {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .menu ul li a {
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .section-tribute div h1,
+    .biografia h2,
+    .section-timeline h2 {
+        font-size: 20px;
+    }
+    .section-tribute div p {
+        font-size: 14px;
+        width: 300px;
+    }
+    .section-tribute .img-chester {
+    width: 200px;
+    }
+    .section-tribute legend {
+        font-size: 12px;
+        width: 200px;
+    }
+}
